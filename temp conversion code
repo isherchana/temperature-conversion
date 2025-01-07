@@ -1,0 +1,12 @@
+#temperature conversion (using the conversion formulas)
+
+c_or_f = input("Is this temp in Celcius or Fahrenheit (Enter C or F): ")
+temp = float(input("Enter the temperature: "))
+
+if c_or_f == "C":
+    temp = round((9 * temp) / 5 + 32, 1)
+    print(f"The temperature is {temp}°F")
+
+elif c_or_f == "F":
+    temp = round((temp - 32) * 5 /9, 1)
+    print(f"The temperature is {temp}°C")
